@@ -26,8 +26,9 @@ function List(props){
                 </div>
                 <span className="list-item-name">
                   {person.title}
-                  <span className="list-item-power">{person.url}</span>
+                  <span className="list-item-power"> <a href={person.url}>{person.url}</a></span>
                     <span className="list-lihat">Lihat >></span>
+                
                 </span>
               </li>
               
@@ -37,6 +38,7 @@ function List(props){
   </>
   );
 }
+
 
 
 class App extends React.Component {
@@ -80,5 +82,6 @@ class App extends React.Component {
     );
   }
 }
+
 
 export default App;
